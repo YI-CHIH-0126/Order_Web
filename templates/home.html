@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>store_name</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='template.css')}}"/>
+    </head>
+    <body style="background-color:pink">
+        <h1>Select a function that you want to do</h1>
+        <div class="frame">
+            <form action="/order">
+                <input type="submit" name="order" value="Order" class="order"></input>
+            </form>
+            <form action="/check_order">
+                <input type="submit" name="check_order" value="Check order" class="check_order"></intput>
+            </form>
+            <form action="/log_in">
+                <input type="submit" name="log_in" value="Manager log in" class="manager_log_in"></input>
+            </form>
+        </div>
+    </body>
+</html>
